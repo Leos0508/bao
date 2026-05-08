@@ -17,15 +17,29 @@ The crate is named `bao` but installs a single binary called `b` for quick typin
 
 ## Installation
 
-From the project root:
+### From GitHub (recommended)
 
 ```bash
+cargo install --git https://github.com/Leos0508/bao
+```
+
+To pin to a specific release:
+
+```bash
+cargo install --git https://github.com/Leos0508/bao --tag v0.1.0
+```
+
+Both commands install the `b` binary to `~/.cargo/bin` (make sure that directory is on your `PATH`).
+
+### From a local clone
+
+```bash
+git clone https://github.com/Leos0508/bao
+cd bao
 cargo install --path .
 ```
 
-This builds and installs the `b` binary to `~/.cargo/bin` (make sure that directory is on your `PATH`).
-
-Alternatively, build a release binary without installing:
+Or build a release binary without installing:
 
 ```bash
 cargo build --release
